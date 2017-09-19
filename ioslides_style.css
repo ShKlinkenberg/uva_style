@@ -11,7 +11,7 @@ aside.gdbar {
 }
 
 slides { animation: uva_rainbow 600s infinite;
-         background-image: url("http://shklinkenberg.github.io/statistics-lectures/template/Andreaskruizen_patroon_A_t_w.png");
+         background-image: url("http://shklinkenberg.github.io/uva_style/images/Andreaskruizen_patroon_A_t_w.png");
          background-repeat: repeat-y; 
          background-position: left top; }
 
