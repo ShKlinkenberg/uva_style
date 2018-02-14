@@ -49,7 +49,7 @@ a { color: #009CDD; }
 
 
 blockquote {
-  vertical-align: middle;
+  // vertical-align: middle;
   background: #f9f9f9;
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;
@@ -66,8 +66,8 @@ blockquote:before {
 }
 
     blockquote p{ color: red; 
-              text-align: center;
-              font-style: italic;
-              display: inline;
-              height: 150px;
+             // text-align: center;
+             // font-style: italic;
+             // display: inline;
+             // height: 150px;
             }
