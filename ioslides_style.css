@@ -49,11 +49,12 @@ a { color: #009CDD; }
 blockquote p{ color: black; 
               text-align: center;
               font-style: italic;
-              vertical-align: middle;
+              
               height: 150px;
             }
 
 blockquote {
+  vertical-align: middle;
   background: #f9f9f9;
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;
