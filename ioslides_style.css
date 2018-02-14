@@ -48,5 +48,6 @@ a { color: #009CDD; }
 
 blockquote p{ color: red; 
               text-align: center;
+              font-style: italic;
             }
 
