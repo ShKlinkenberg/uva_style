@@ -66,7 +66,7 @@ blockquote:before {
   vertical-align: -0.4em;
 }
 
-    blockquote p{ color: red; 
+    blockquote p{ color: #1F1D21; 
              text-align: center;
              font-style: italic;
              // display: inline;
