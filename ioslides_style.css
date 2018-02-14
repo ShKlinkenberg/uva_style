@@ -67,8 +67,8 @@ blockquote:before {
 }
 
     blockquote p{ color: red; 
-             // text-align: center;
-             // font-style: italic;
+             text-align: center;
+             font-style: italic;
              // display: inline;
              // height: 150px;
             }
