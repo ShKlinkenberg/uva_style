@@ -46,4 +46,7 @@ pre, code { white-space:pre !important;
 
 a { color: #009CDD; }
 
-blockquote p{ color: red; }
+blockquote p{ color: red; 
+              text-align: center;
+            }
+
