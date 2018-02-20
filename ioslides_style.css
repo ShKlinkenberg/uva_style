@@ -4,6 +4,8 @@ slide.fill.nobackground.current { border-radius: 30px; border: solid 3px white; 
 
 .segue.nobackground.level1.fill.current { border-radius: 30px; }
 
+body > slides > slide.fill.nobackground.current { background-size:cover !important; }
+
 slides > slide.dark {
     background: #BC0031 !important;
 }
