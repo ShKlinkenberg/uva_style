@@ -1,0 +1,86 @@
+:root {
+  
+  --uva-color: #bc0031;
+  --fmg-color: #E98300;
+  
+}
+
+
+/* Create UvA faculty color carousel */
+
+@keyframes uva_rainbow { /* 0%  { background-color: #1F1D21; }  UvA  */
+                          0% { background-color: #E98300; } /* FMG  */
+                         30% { background-color: #90003E; } /* FDR  */
+                         45% { background-color: #257835; } /* GEN  */
+                         60% { background-color: #004E92; } /* FGW  */
+                         75% { background-color: #BEB511; } /* FEB  */
+                         90% { background-color: #751B68; } /* FNWI */
+                       }
+
+/* Apply color carousel to backgroun and set overlay background image and uva logo on top  */
+
+body { animation: uva_rainbow 600s infinite;
+       background-image: url(http://shklinkenberg.github.io/uva_style/images/uvalogo_regular_p_en.png), url(http://shklinkenberg.github.io/uva_style/images/uva_bg.jpg);
+       background-size: 300px, 100%;
+       background-repeat: no-repeat, no-repeat;
+       background-position: 10px 10px, center bottom;
+       background-blend-mode: normal, overlay;
+}
+
+/* Set header colors to uva color  */
+
+h1, h2, h3, h5 {color: var(--uva-color);}
+
+.title-slide hgroup h1 { color: var(--uva-color); }
+.title-slide hgroup h2 { color: var(--uva-color); }
+
+/* crate dotted border on section slides */
+
+.segue hgroup { border: 1px dotted grey;
+                width: 60%;
+}
+
+.segue hgroup { background-color: #D9D9D9; border: 2px dotted grey;}
+.segue hgroup h1 { border-bottom: 2px dotted grey; padding: 10px; font-size: 150%; background-color: #fff; }
+.segue hgroup h2 { border-bottom: 2px dotted grey; padding: 10px; font-size: 110%; background-color: #fff; }
+.title-slide hgroup p { padding: 10px; margin-top: 0px; }
+
+/* set background images to title slide  */
+
+.title-slide { background-image: url(http://shklinkenberg.github.io/uva_style/images/uvalogo_regular_p_en.png), url(http://shklinkenberg.github.io/uva_style/images/uva_bg.jpg);
+               background-size: 400px, 100%;
+               background-repeat: no-repeat, no-repeat;
+               background-position: 10px 10px, center bottom; }
+
+/* Set slide border radius */
+
+slides > slide { -webkit-border-radius: 10px;
+                 -moz-border-radius:    10px;
+                 -ms-border-radius:     10px;
+                 -o-border-radius:      10px;
+                 border-radius:         10px; 
+                 border: 2px solid #000;
+               }
+
+/* Hide sidebar on title page */
+
+aside.gdbar { display: none;
+              background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #bc0031), color-stop(100%, #bc0031)) no-repeat;
+              background: -webkit-linear-gradient(left, #bc0031, #bc0031 ) no-repeat;
+              background: -moz-linear-gradient(left, #bc0031, #bc0031 ) no-repeat;
+              background: -o-linear-gradient(left, #bc0031, #bc0031 ) no-repeat
+              background: linear-gradient(left, #bc0031, #bc0031 ) no-repeat;
+}
+
+/* Set section slide background and text color */
+
+slides > slide.dark {background: var(--uva-color) !important;}
+
+.segue hgroup h2 {color: var(--uva-color) !important;}
+
+/* Allow scrolling on code blocks */
+
+pre, code { white-space:pre !important; 
+            overflow:scroll !important;
+            max-height: 450px !important;
+           }
