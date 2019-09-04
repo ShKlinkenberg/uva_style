@@ -8,23 +8,26 @@
 
 /* Create UvA faculty color carousel */
 
-@keyframes uva_rainbow { /* 0%  { background-color: #1F1D21; }  UvA  */
-                          0% { background-color: #E98300; } /* FMG  */
+@keyframes uva_rainbow { /*0%  { background-color: #1F1D21; }  UvA  */
+                         0%  { background-color: #E98300; } /* FMG  */
+                         15% { background-color: #BEB511; } /* FEB  */
                          30% { background-color: #90003E; } /* FDR  */
                          45% { background-color: #257835; } /* GEN  */
                          60% { background-color: #004E92; } /* FGW  */
-                         75% { background-color: #BEB511; } /* FEB  */
+                         75% { background-color: #E98300; } /* FMG  */
                          90% { background-color: #751B68; } /* FNWI */
                        }
 
 /* Apply color carousel to backgroun and set overlay background image and uva logo on top  */
 
+/* linear-gradient(left, transparent 300px,rgba(39,39,39,.5) 300px, rgba(39,39,39,.5) 100%); */
+
 body { animation: uva_rainbow 600s infinite;
-       background-image: url(http://shklinkenberg.github.io/uva_style/images/uvalogo_regular_p_en.png), url(http://shklinkenberg.github.io/uva_style/images/uva_bg.jpg);
-       background-size: 300px, 100%;
-       background-repeat: no-repeat, no-repeat;
-       background-position: 10px 10px, center bottom;
-       background-blend-mode: normal, overlay;
+       background-image: url(http://shklinkenberg.github.io/uva_style/images/uvalogo_regular_p_en.png);
+       background-size: 300px;
+       background-repeat: no-repeat;
+       background-position: 10px 10px;
+       background-blend-mode: normal;
 }
 
 /* Set header colors to uva color  */
